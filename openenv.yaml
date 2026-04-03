@@ -1,0 +1,12 @@
+name: email-triage-env
+description: AI environment for customer email triage
+
+entrypoint: env.environment:EmailEnv
+
+tasks:
+  - name: easy_classification
+    difficulty: easy
+  - name: medium_decision
+    difficulty: medium
+  - name: hard_response
+    difficulty: hard
